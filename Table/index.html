@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <button id="add">Add Row</button>
+
+    <div class="container">
+        <input id="inp" type="text" placeholder="axtar...">
+        <div class="modul">
+            <div class="close">
+                <i class="fas fa-times" id="cancel"></i>
+            </div>
+            <div class="inputs">
+                <form>
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="surname" placeholder="Surname">
+                    <input type="number" id="age" placeholder="Age">
+                </form>
+            </div>
+            <div class="create">
+                <button class="btn" id="create">Create</button>
+                <button class="btn" id="update">Uptade</button>
+            </div>
+        </div>
+        <table id="myTable" border="1">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Age</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>30</td>
+                    <td>
+                        <button class="edit"><i class="fas fa-pencil-alt" id="edit"></i></button>
+                    </td>
+                    <td>
+                        <button class="remove"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
